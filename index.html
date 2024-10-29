@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- Font awesome cdn -->
+    <script src="https://kit.fontawesome.com/5e98af4d5c.js" crossorigin="anonymous"></script>
+
     <style>
         .font-manrope{
             font-family: "Manrope", sans-serif;
@@ -27,6 +30,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'btn-bg': '#ABEF5F',
               }
               
             }
@@ -34,9 +38,57 @@
         }
       </script>
 </head>
-<body class="font-manrope">
+<body class="font-manrope overflow-hidden">
     <!-- Header Section -->
-    <header></header>
+    <header class="md:mx-12">
+        <nav class="overflow-hidden">
+            <div class="navbar bg-base-100 flex justify-between items-center">
+                <div class="navbar-start">
+                    <h2 class="font-bold text-2xl">
+                        <i class="fa-solid fa-arrow-right px-2 py-2 rounded-full bg-btn-bg -rotate-45 text-black"></i> Rinterio
+                    </h2>
+                </div>
+    
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#" class="font-bold">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Navbar end buttons (hidden on small screens) -->
+                <div class="navbar-end space-x-2 hidden lg:flex">
+                    <button class="btn btn-circle btn-outline">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn btn-circle btn-outline">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <a class="btn bg-btn-bg" href="#">Book Consult <i class="fa-solid fa-arrow-right px-2 py-2 rounded-full bg-gray-950 text-white -rotate-45"></i></a>
+                </div>
+    
+                <!-- Dropdown for smaller screens -->
+                <div class="dropdown lg:hidden ml-auto">
+                    <button tabindex="0" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </button>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow right-0">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
 
     <!-- Main Section -->
     <main></main>
