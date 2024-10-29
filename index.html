@@ -31,6 +31,7 @@
               colors: {
                 clifford: '#da373d',
                 'btn-bg': '#ABEF5F',
+                'btn-bg-light': '#ABEF5F80',
               }
               
             }
@@ -41,7 +42,7 @@
 <body class="font-manrope overflow-hidden">
     <!-- Header Section -->
     <header class="md:mx-12">
-        <nav class="overflow-hidden">
+        <nav class="overflow-hidden mb-5">
             <div class="navbar bg-base-100 flex justify-between items-center">
                 <div class="navbar-start">
                     <h2 class="font-bold text-2xl">
@@ -61,10 +62,10 @@
     
                 <!-- Navbar end buttons (hidden on small screens) -->
                 <div class="navbar-end space-x-2 hidden lg:flex">
-                    <button class="btn btn-circle btn-outline">
+                    <button class="btn btn-circle">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <button class="btn btn-circle btn-outline">
+                    <button class="btn btn-circle">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <a class="btn bg-btn-bg" href="#">Book Consult <i class="fa-solid fa-arrow-right px-2 py-2 rounded-full bg-gray-950 text-white -rotate-45"></i></a>
@@ -87,6 +88,25 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Banner section -->
+
+        <div>
+            <!-- banner img -->
+            <div class="flex justify-center w-full">
+                <img src="./assets/banner.png" alt="">
+            </div>
+
+            <!-- banner-contant -->
+            <div class="text-center space-y-4" >
+                <h1 class="font-extrabold text-6xl">A barn house of this design has a <br>striking appearance</h1>
+                <p class="font-medium text-1xl text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>
+                     accents, and large windows that flood the space with natural light.</p>
+                     <a class="btn bg-btn-bg-light mb-10" href="#">View Details <i class="fa-solid fa-arrow-right px-2 py-2 rounded-full bg-btn-bg text-gray-950 -rotate-45"></i></a>
+                
+            </div>
+        </div>
+
     </header>
     
 
